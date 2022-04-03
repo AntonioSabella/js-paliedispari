@@ -8,10 +8,11 @@ Dichiariamo chi ha vinto. */
 let userName = prompt('Inserisci il tuo nome di gioco:')
 
 //Chiedo all'utente di scegliere tra pari o dispari
-let userEvenOdd = prompt('Scegli pari o dispari');
+let userEvenOdd = prompt("Scegli 'pari' o 'dispari'");
 
 //Chiedo all'utente di scegliere un numero compreso tra 1 e 5
 let userNumber = parseInt(prompt('Inserisci un numero compreso tra "1" e "5"'));
+console.log(userNumber);
 
 //Creo una funzione per generare un numero random per il computer
 function pcRandomNumber(min, max) {
@@ -19,11 +20,13 @@ function pcRandomNumber(min, max) {
   }
 
   let pcNumber = pcRandomNumber(1,5);
+  console.log(pcNumber);
 
 //Creo una funzione che effettui la somma e sancisca se sia pari o dispari, associando il condizionale alla scelta appropriata effettuata dall'utente
 function sumAndControl(first_number, second_number){
-    let result='';
+    let result;
     let sum = first_number + second_number;
+    console.log(sum);
 
     if(sum % 2 == 0 && userEvenOdd == 'pari'){
       result = true;
